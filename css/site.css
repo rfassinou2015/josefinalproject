@@ -1,0 +1,133 @@
+	@import url(https://fonts.googleapis.com/css?family=Lato:400,100,700);
+	
+	* {
+		margin: 0px;
+		padding: 0px;
+		}
+		
+	body {
+		font-family: 'Lato', Arial, Helvetica, sans-serif;
+		background: #efefef;
+		}
+		
+	header {
+		background: #383;
+		height: 100px;
+		border-bottom: 3px solid #8A8;
+		margin-bottom: 20px;
+		}
+		
+	header h1 {
+		font-family: 'Lato', Tahoma, Geneva, sans-serif;
+		color: #FFF;
+		font-size: 50px;
+		text-align: center;
+		display: block;
+		font-weight: 500;
+		position: relative;
+		top: 20px;
+		}
+		
+	#main_content {
+		max-width: 1200px;
+		min-height: 100px;
+		height: auto;
+		margin: 0px auto 50px auto;
+		background: #fefefe;
+		padding: 30px;
+		box-shadow: 0px 10px 10px #999;
+		color: #333;
+		position: relative;
+		border-radius: 30px;
+		}
+		
+	h1, h2 {
+		margin-bottom: 20px;	
+			}
+			
+	.content_area {
+		padding: 20px;
+		background: #ddd;
+		display: block;
+		margin-bottom: 10px;
+		clear: both;
+		border-radius: 30px;
+		}
+	#main_content p {
+		margin: 10px auto;
+		}
+	.content_image_right {
+		display: block;
+		float: right;
+		padding: 10px;
+		width: 50%;
+		height: auto;
+		}
+			
+	.centered {
+		text-align: center;
+		margin: 0px auto;
+		}
+			
+	.placeholder {
+		min-height: 500px;
+		min-width: 900px;
+		background: #ddd;
+		margin: 20px 0px;
+		}
+			
+	form input {
+		min-width: 150px;
+		min-height: 30px;
+		margin: 5px 0px;
+		}
+		
+	form label {
+		float: left;
+		clear: left;
+		display: block;
+		font-weight: bold;
+		padding: 5px 15px 0 0;
+		text-align: right;
+		text-transform: uppercase;
+		width: 200px;
+		}
+		
+	#information label.error {
+		font-size: 0.8em;
+		color: #F00;
+		font-weight: bold;
+		display: block;
+		}
+	
+	#button_container {
+		height: 50px;
+    	margin: 20px 0 30px 205px;
+    	}
+		
+	#button_container input{
+		float: left;
+		margin: 10px;
+		}
+		
+	footer {
+		background: #383;
+		height: 50px;
+		width: 100%;
+		display: block;
+		border-top: 3px solid #8A8;
+	
+		}
+	#content-left{
+		float: left;
+	}
+		
+	/* Mobile */
+	@media screen and (min-width: 1px) and (max-width: 720px) {
+		form label {
+			text-align: left;
+			}
+		#button_container {
+			margin: 20px 0px 50px 20px;
+			}
+		}
