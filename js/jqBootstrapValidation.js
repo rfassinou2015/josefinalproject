@@ -1,11 +1,7 @@
-/* jqBootstrapValidation
+/* Validation
  * A plugin for automating validation on Twitter Bootstrap formatted forms.
- *
- * v1.3.6
- *
- * License: MIT <http://opensource.org/licenses/mit-license.php> - see LICENSE file
- *
- * http://ReactiveRaven.github.com/jqBootstrapValidation/
+
+ * 
  */
 
 (function( $ ){
@@ -62,16 +58,16 @@
 
           $inputs.trigger("validationLostFocus.validation");
 
-          if (warningsFound) {
+          if (warningsFound) { //if there is an error on the contat form
             if (settings.options.preventSubmit) {
-              e.preventDefault();
+              e.preventDefault();   // throw an exception which is an event callback function e
             }
-            $form.addClass("has-error");
+            $form.addClass("has-error"); //this calls the class name .has-error
             if ($.isFunction(settings.options.submitError)) {
               settings.options.submitError($form, e, $inputs.jqBootstrapValidation("collectErrors", true));
             }
           } else {
-            $form.removeClass("has-error");
+            $form.removeClass("has-error"); //this remove the class name .has-error
             if ($.isFunction(settings.options.submitSuccess)) {
               settings.options.submitSuccess($form, e);
             }
@@ -415,7 +411,7 @@
                     }
                   });
                 }
-              });
+              }); //checking error on submit (it checks the typ of data submitted and check if field is valid or empty)
 
               return errorsFound;
             }
@@ -877,10 +873,7 @@
 	}
 
   /**
-   * Thanks to Jason Bunting via StackOverflow.com
-   *
-   * http://stackoverflow.com/questions/359788/how-to-execute-a-javascript-function-when-i-have-its-name-as-a-string#answer-359910
-   * Short link: http://tinyurl.com/executeFunctionByName
+   * 
   **/
   function executeFunctionByName(functionName, context /*, args*/) {
     var args = Array.prototype.slice.call(arguments).splice(2);

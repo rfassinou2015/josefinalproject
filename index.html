@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html lang="en">
 
 <head>
@@ -6,16 +6,17 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="final project of Jose">
+    <meta name="author" content="Jose">
 
     <title>Freelancer -My Josee</title>
 
-    <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+    <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS -->
-    <link href="css/freelancer.css" rel="stylesheet">
+    <!-- Custom external CSS -->
+    <link href="css/finalproject.css" rel="stylesheet">
+
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -30,7 +31,6 @@
     <![endif]-->
 
 </head>
-
 <body id="page-top" class="index">
 
     <!-- Navigation -->
@@ -51,13 +51,13 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                  <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#">About Me</a>
+                        <a href="about.html">About Me</a>
                     </li>
                     <li>
                         <a href="#">Skills</a>
                     </li>
                     <li>
-                        <a href="#">FAQ</a>
+                        <a href="faq.html">FAQ</a>
                     </li>
                    
                     <li class="dropdown">
@@ -117,7 +117,7 @@
             </div>
             <div class="row">
                 <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal"> <!-- instance of jQuery UI -->
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
@@ -197,8 +197,8 @@
                     <p>Whether you're a startup business or a individual looking for a Professional Web Developer to work on your next web project, you can take a look at my professional designs and graphics</p>
                 </div>
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <a href="#" class="btn btn-lg btn-outline">
-                        <i class="fa fa-download"></i> Start Your Web Design
+                    <a href="http://yoursite.com" class="btn btn-lg btn-outline" target="_blank">
+                        <i class="fa fa-laptop"></i> Start Your Web Design
                     </a>
                 </div>
             </div>
@@ -222,7 +222,7 @@
                         <div class="row control-group">
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Name</label>
-                                <input type="text" class="form-control" placeholder="Name" id="name" required data-validation-required-message="Please enter your name.">
+                                <input type="text" class="form-control" placeholder="First Name*" id="name" required data-validation-required-message="Please enter your name.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
@@ -230,6 +230,13 @@
                             <div class="form-group col-xs-12 floating-label-form-group controls">
                                 <label>Email Address</label>
                                 <input type="email" class="form-control" placeholder="Email Address" id="email" required data-validation-required-message="Please enter your email address.">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                         <div class="row control-group">
+                            <div class="form-group col-xs-12 floating-label-form-group controls">
+                                <label>Web Site</label>
+                                <input type="url" class="form-control" placeholder="Web Site URL" id="website" required data-validation-required-message="Please enter your web site address.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
@@ -251,7 +258,7 @@
                         <div id="success"></div>
                         <div class="row">
                             <div class="form-group col-xs-12">
-                                <button type="submit" class="btn btn-success btn-lg">Contact Me</button>
+                                <button type="submit" class="btn btn-default btn-lg">Contact Me</button>
                             </div>
                         </div>
                     </form>
@@ -551,7 +558,12 @@
     <script src="js/contact_me.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="js/freelancer.js"></script>
+    <script src="js/finalproject.js"></script>
+    
+    <!--Lnk to external jQuery UI -->
+    <script src="js/jquery-ui.js"></script>
+    <script  src="js/jquery-1.11.0.min.js"></script>
+    
 
 </body>
 
